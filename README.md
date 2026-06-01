@@ -5,6 +5,8 @@ The script can be used to predict mean wind speed at multiple locations given th
 
 The method is used to reconstruct reef exposure to recent cyclones on the Great Barrier Reef (GBR) for the ecological model ReefMod-GBR (v.7.2 and later versions). An extra step for ReefMod is to convert wind speed into a cyclone category defined on the Saffir-Simpson scale (Bozec et al. 2022). Note that the Australian Bureau of Meteorology reports mean wind speed over a 10-minute period, while the Saffir-Simpson scale is based on maximum sustained 1-minute winds. So mean wind speeds need to be converted into 1-min sustained winds equivalent following the relationship: MSW1 = MSW10*1/0.88 (MWO 2017, Kruk et al. 2010).
 
+Update June 1 2026: should work for both Southern and Northern Hemispheres -> make sure latitudes of the cyclone tracks are negative in HS and positive in NH.
+
 Requires two datasets: 
 1) the spatial coordinates of the locations of interest
 2) a data table listing the position and characteristics of cyclones (typically extracted from international databases of best cyclone tracks).
